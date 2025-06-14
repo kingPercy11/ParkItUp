@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useRef,useState, useCallback } from "react"
-import {Route, Routes } from "react-router-dom"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Image from "next/image"
