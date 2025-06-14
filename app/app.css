@@ -188,7 +188,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 .profile-card {
-  background: rgba(48, 51, 54, 0.9);
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-navy) 100%);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(108, 117, 125, 0.3);
   transition: all 0.3s ease;
