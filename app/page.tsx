@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef,useState, useCallback } from "react"
+import {Route, Routes } from "react-router-dom"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Image from "next/image"
@@ -8,11 +9,12 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Search, MapPin, Car, Shield, Clock, Users } from "lucide-react"
+import { Search, MapPin, Car, Shield, Clock, Users} from "lucide-react"
 // import { Linkedin, Instagram, Facebook, Mail } from "lucide-react"
 import { FaLinkedin, FaInstagram, FaFacebook, FaEnvelope, FaFacebookF, FaGooglePlay } from "react-icons/fa"
 import "./app.css"
 import {FaLinkedinIn} from "react-icons/fa6"
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -209,7 +211,11 @@ export default function ParkItUpLanding() {
   }, [currentTestimonial])
 
   return (
+    
     <div className="min-h-screen ">
+      {/* <Routes>
+        <Route path="/profile" element={<UserProfile />} />
+      </Routes> */}
       {/* Nav bar */}
       <nav className="fixed top-0 w-full backdrop-blur-md z-50 border-b border-blue-900">
         <div className="container mx-auto px-4 py-4">
