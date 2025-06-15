@@ -16,14 +16,15 @@ export default function Component() {
               <AvatarFallback className="text-2xl bg-gray-700 text-blue-300">PS</AvatarFallback>
             </Avatar>
             <div>
-              <h1 className="text-4xl font-bold mb-2 text-white">Percy Stark</h1>
+              <div  className="flex gap-5 items-center justify-between mb-2">
+                <h1 className="text-4xl font-bold mb-2 text-white">Percy Stark</h1>
+                <Button className="edit-profile-btn rounded-full px-6 py-3">
+                  <Edit className="w-4 h-4" />
+                </Button>
+              </div>
               <p className="text-gray-400 text-lg">kingstark@example.com</p>
             </div>
           </div>
-          <Button className="edit-profile-btn rounded-full px-6 py-3">
-            <Edit className="w-4 h-4 mr-2" />
-            Edit Profile
-          </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
